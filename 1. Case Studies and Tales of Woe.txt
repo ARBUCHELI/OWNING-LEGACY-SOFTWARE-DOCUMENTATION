@@ -1,0 +1,73 @@
+# 1. CASE STUDIES AND TALES OF WOE
+----------------------------------
+* Punishing competence with responsibility
+------------------------------------------
+Congratulations, you've earned a promotion or a new job. You've impressed those around you with your experience and ability to master your engineering skills. 
+
+As you're going through your new responsibilities, something stands out, an old critical system that nobody knows very well, if at all. Good news, the thing nobody else wanted to deal 
+with is now your problem. 
+
+Somebody has to own it and it might as well be you. 
+
+The intent may be a test of your skills. You've done well so far, but you're not quite at the next level. This one last task will show whether you've got the temperament, spirit, and 
+skills for that next promotion. 
+
+An opportunity to show off what you've learned and gain some additional experience along the way. 
+
+Alternatively, this dubious gift could be seen as a compliment. You're so good that you can handle any challenge and nobody else is capable of conquering the beast. 
+
+This is an opportunity to shine or be knocked down a peg or two. Does it truly matter how you got to this point? Not really, to be honest. What matters more is your strategy from this 
+point forward. 
+
+You have unique opportunity to maintain and establish a new chapter in the book of this project. There could be many more or this could be the end of this poor, decrepit program. 
+
+What exactly is legacy software? In computing, legacy software is software superseded by another system but is still in widespread use and therefore difficult to replace. 
+
+Here are some practical examples of legacy software applications. 
+
+A content management system built with the previous generation of both the language and framework, yet is used daily by hundreds who relied on it for their livelihood. 
+
+An affiliate system with tens of thousands of users that could not ingest data quickly enough to calculate. Each passing day introduced a greater data backlog and more frustrated 
+affiliates demanding accurate data and payouts. 
+
+A monolithic website publishing system that included both an editor and the front end that hadn't been deployed to production in years, but couldn't be turned off out of fear from the 
+last outage that was caused when it was attempted. 
+
+An open source project with thousands of users, an issue queue with scores of issues, bug reports and patches that was abandoned by its primary author and maintainer. 
+
+Each of these systems was important at one point and still is. However, they are no longer the latest and greatest. 
+
+Teams or individual engineers consider them burdensome to maintain. 
+
+Each was important to its audience. The opportunity and responsibility of owning and managing a legacy system is a pivotal moment. Your approach from the very beginning will set the tone 
+for the duration of your experience.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+* Respecting history
+--------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
