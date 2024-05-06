@@ -45,8 +45,49 @@ for the duration of your experience.
 
 * Respecting history
 --------------------
+Software is written and developed by people, typically with best intentions. 
 
+They may be professional, they may be amateur, and they may be writing a program for the very first time. 
 
+Regardless of their journey, they have created something tangible that can be used. People have feelings, hopes, and dreams and pride in their accomplishments. 
+
+Engineering can be both difficult and rewarding. The end result may be a utility to solve a specific problem. It may be a shared solution within a department. It could even be a 
+commercial product with paying customers. 
+
+Regardless of what type of system it is, it was built with a purpose. The requirements and intents that led to the creation of the service may be lost with time. 
+
+They may be perfectly well documented. There's a very good chance that a system is being used in a different way than what was originally intended. 
+
+If a system seems unmanageable now, take a deep breath. 
+
+Try to empathize with those who came before you. When writing software, nobody creates a dumpster fire on purpose. 
+
+You could say that the road to sorrow is paved with good intentions, and acting in good faith doesn't guarantee success. 
+
+Something that I've learned in an excruciating and visceral way is that you should assume the best intentions of the people and the team that built a piece of software. 
+
+Badmouthing a piece of software can be synonymous with insulting the people who wrote it. There's an excellent chance that someone involved with that project is still around to hear your 
+criticism of it. 
+
+Would you walk up to someone and tell them that they're terrible engineers? No? Then why would you say that their work was awful? The result of their blood, sweat, and tears has no value. 
+
+If a system works, even if it's subjectively ugly and weird it still works and should be respected. If it didn't work, it'd be turned off or retired, or one would assume. 
+
+More on that later. The best practices of two, five, or 10 years ago may be different from those of today. The dependencies of the system may be outdated. 
+
+It may rely on an outdated version of a database with dozens of critical security vulnerabilities, yet it still performs its duty. 
+
+It may be challenging to maintain or to add on, or more accurately, those who are responsible for it don't know how to maintain it. 
+
+Somebody built it and got it to the point where it is today. It's less important to be proper or academically correct. 
+
+Subjectively and objectively, you may be accurate but the system may be imperfect. Does it matter? Not really. Could it be done better? Sure. 
+
+Is that a point worth making? Absolutely not. Assume the best intentions, respect what came before, and look forward to the next chapter in the application's legacy. 
+
+As you assume ownership of a legacy system, documentation will play a key role in your understanding. So what type of manual should you be looking for and writing?
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
