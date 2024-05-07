@@ -212,6 +212,82 @@ gathered but verify. On the subject of trust, what are some ways that poor commu
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+* Don't unplug this server
+--------------------------
+It's understandable to fear what you don't know. Fear of the unknown is a self-preservation instinct that protects us from harm. Without it, we just happily eat any mushroom we'd find in 
+the woods, blindly run into dark rooms and engage in all sorts of incredibly risky behavior. 
+
+We see messages like this all the time in real life usually with a story behind them. Don't open this door, don't turn this off and check with so-and-so before doing anything. 
+
+There may be a busy hallway, a piece of electrically sensitive machinery, or a piece of equipment that requires special training to use. 
+
+These messages can also be left as a form of control and a fear of delegation. 
+
+This can be done with the best of intentions and sometimes for very good reasons, such as liability, sensitive information, and the need for a specific skillset. 
+
+However, without documentation, process and a backup, a do not touch message can easily become a single point of failure. 
+
+The message, Don't unplug the server, has a lot of hidden meanings within it. 
+
+On the surface, it clearly states that nobody should stop the system. 
+
+However, it doesn't say why the server shouldn't be unplugged. 
+
+It doesn't state the purpose, the responsible party, or what will happen if the server is turned off. 
+
+The path of least resistance is to blindly obey the message. Somebody else is responsible for this decision. I don't know who it is, but it's not me. 
+
+These messages can exist in code as well. I've been guilty of this myself. I personally wrote, "Don't change this sorting algorithm unless you know exactly what you're doing." into a code 
+base. 
+
+That sort and code were well documented, but that doesn't change that this sort of message is disempowering and removes agency from others by making assumptions about the other 
+maintainers' ability to adjust the code. 
+
+In hindsight, that message was arrogant and caused more harm than good. This isn't to say that there shouldn't be messages warning of consequences. 
+
+Systems can and do exist in various states of fragility and severity and disruptions can have massive consequences. 
+
+If you ever need to leave a message of caution, give context and steps. Empower those who read it to know how to gracefully manage it. 
+
+What will happen if things go badly, and additional resources. Often, a Legacy system won't have any type of messaging whatsoever. Does that mean there aren't consequences? Of course not. 
+
+It just means that the consequences aren't labeled. I've definitely inherited systems that were forgotten experiments that didn't talk to anything and did nothing, but were hosted in 
+production with uptime monitoring and emergency response expectations. 
+
+The lack of messaging and the context of it being on in production meant people assumed it needed to be there. Do your best to infer the potential consequences if something were to happen 
+to a system based on the traffic, contents and so forth. Document what you know with caveats of what are facts and what are assumptions. 
+
+This will help build a strategy and foundation for managing the system moving forward. It's natural to obey a message of caution and it's healthy to question why. 
+
+Knowledge is empowerment and you and others should have the ability to effectively manage a system. Legacy software is by its own definition, older. Is an older system a bad thing?
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
