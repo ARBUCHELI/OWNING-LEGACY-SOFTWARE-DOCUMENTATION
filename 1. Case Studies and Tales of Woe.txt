@@ -396,9 +396,97 @@ How can engineers rebuild an understanding of how a system works while improving
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+* Taking over an old system from the inside
+-------------------------------------------
+I enjoy narrative-driven experiences that reveal themselves incrementally, providing a series of discoveries that drive the story and lead to more questions, which then lead to even more. 
 
+There is a joy in building knowledge, unraveling the puzzle to have solved the riddle or the challenge in order to achieve something. 
 
+It can be immensely satisfying to conquer a problem and legacy software can absolutely be a riddle. 
 
+Throughout my career as an engineer I've had numerous opportunities to explore and learn an existing system from the inside and outside. 
+
+There's no one correct way, but there are some similarities in the approach that you can adapt to your needs. 
+
+I'll give an example that describes both the challenges of maintaining legacy software and some strategies to handle it. 
+
+Previously I mentioned an affiliate system. This was a project that I inherited when I joined a new company. 
+
+It consisted of an event-driven tracking system, a data processing system, and a front end. 
+
+It had been written as a replacement for another system by engineers who were no longer with the company, and nobody within the organization understood how it worked. 
+
+Over time, it had struggled to keep up with traffic demands and was unable to keep current, falling further and further behind. 
+
+The affiliate system needed both an emergency triage and a long-term understanding of how it functioned in order to bring it to a maintainable state. 
+
+Before I continue, I'd like to stress that this system, despite the improvements necessary to make it sustainable, did provide a foundation that was used for at least five years 
+afterward and may still be in use today. 
+
+Giving respect where respect is due, the overall principles used were effective. 
+
+It just took a bit of understanding and cleanup before it reached a more maintainable state. 
+
+This is an example of an application that was brought back from the brink. 
+
+With that said, I had my new responsibility and therefore got to work. The log messages were vague, sporadic, and confusing. The code was poorly documented and the system was incredibly 
+abstracted and there was no manual. 
+
+The triage pass involved determining what was taking the longest. 
+
+With the assistance of other engineers we got the system running locally and through breakpoints and just reading code, set about adding instrumentation and logging messages. 
+
+	. As we worked, we would add comments and method documentation about what they did and how to use them. 
+
+	. We leveraged the IDE to refactor some variable names to have semantic meaning, so no more for i and foo statements. 
+
+	. A manual was started with the bare minimum of how to run the system and how to test it. 
+
+	. We sought out dead code, meaning code that was written but was never executed. 
+
+	. Some of the labelings within the system caused confusion as well. 
+
+Ostensibly, this was an extract, transform, and load data process. 
+
+Yet the practical implementation was clearly a different model. A fair amount of time was spent trying to reconcile the labels throughout with what was actually happening. 
+
+A cautionary tale about the importance of naming to be sure. Eventually, optimizations were found and applied which addressed the immediate problem. 
+
+With the backlog of data processing addressed, the focus turned to the future. 
+
+	. Organizational coding standards were applied. 
+
+	. Automated testing was improved and expanded upon and the overall system was simplified. 
+
+	. Throughout, the documentation continued to grow and other engineers contributed to the code base as well. 
+
+There was absolutely a temptation to give up but the cost of failure was too great. 
+
+It would've cost the company a terrifying amount of money and multiple jobs, including my own. 
+
+This is not a tale of an individual accomplishment. 
+
+While portions were handled by individuals, the responsibility and growth were shared through a supportive and collaborative team accomplishment. 
+
+What are the takeaways from this experience? 
+
+	. Start or expand on documentation the moment you begin. 
+
+	. Triage immediate problems to get the system into a stable state. 
+
+	. When the most critical issues are solved continue to document from the inside and out. 
+
+	. Remove unreachable code. 
+
+	. Perform small refactors to improve readability and clean up code formatting. 
+
+	. Expand testing and the audience maintainers. 
+
+	. Document the workflows from end-to-end in order to understand how it works, then find opportunities for optimization. 
+
+As you're documenting features, what's a practical strategy to determine what's worth keeping?
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
