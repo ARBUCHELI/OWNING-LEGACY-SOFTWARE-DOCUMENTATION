@@ -488,6 +488,71 @@ As you're documenting features, what's a practical strategy to determine what's 
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+* The keep, kill, shrink exercise
+---------------------------------
+The act of documenting features in an existing system may seem pedantic, but it's an essential part of understanding what a system does. 
+
+It naturally leads the conversation too. Should the system be doing what it's doing? The act of reducing, and more importantly, focusing the scope of an application increases its overall
+maintainability. 
+
+Why does it matter? 
+
+Just because the system does a thing doesn't mean it should. Over time, it can be convenient to add extra functionality to an application that wasn't within the original scope. 
+
+Tight deadlines, inexperienced engineers, confused expectations, and many other factors can combine to create some really awkward juxtapositions. 
+
+While it should be avoided, it happens. 
+
+Sometimes, a system is reinvented out of ignorance or out of necessity with no current alternatives. 
+
+Over time, it may become clear that there's a much better solution available. 
+
+No hard feelings are necessary. 
+
+Just figure out the better, more sustainable solution and move on. 
+
+There's an exercise that I learned about when I was working with a consulting agency, keep, kill, shrink. 
+
+Practically, this can be done with a single spreadsheet. 
+
+For each feature, describe its function, determine its importance, its complexity, and the risk of either implementation or deprecation. 
+
+I prefer simple systems for measuring such things, such as high, medium, or low. 
+
+It's arbitrary, but it provides a foundation for discussion. 
+
+For example, a feature that is not important, highly complex, and very risky could be a candidate for removal. 
+
+A very important feature that is complex should stay, but could be a candidate for simplification. 
+
+Review this list with stakeholders and decision makers in order to determine its importance and also find out if they even knew it would do a particular task. 
+
+These conversations can be deeply illuminating to all parties, especially given organizational turnover and a lack of institutional knowledge. 
+
+Based on the outcome of these conversations and the rubric, the next step is to determine the fate of each feature. 
+
+	. What would you like to keep? 
+
+	. What should be removed? 
+
+	. And what should be simplified? 
+
+Of course, you should validate this understanding so something critical doesn't get removed accidentally. 
+
+The results of this exercise can be prioritized in the context of the overall product. Implementation of any one of the action items, either kill or shrink, will take effort and potential 
+change management and won't directly add benefit to end users. 
+
+With that said, it does improve the maintainability and support burden that a system represents, which will in turn, lead to more opportunities for enhancements when complete. 
+
+Find a balance that works best for you. 
+
+As you're continuing to work with a system and you're finding opportunities to optimize and simplify, how can you be confident that the changes you're making won't have a negative 
+impact?
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
 
 
 
