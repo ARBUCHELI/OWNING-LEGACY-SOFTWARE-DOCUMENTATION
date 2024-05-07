@@ -263,6 +263,108 @@ Knowledge is empowerment and you and others should have the ability to effective
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+* Newer isn't necessarily better
+--------------------------------
+Newer isn't necessarily better. The fact that a system is older does not invalidate its use. Consider the perspective of respecting the history of an application. 
+
+The application may be built differently than what you are accustomed to. It may not be using an exciting programming language or utilizing best practices. 
+
+It may be objectively ugly and weird but does the application work? Can you look past a cloud of contempt for the slightest bit of rust and recognize the value that it brings? 
+
+In Greek mythology, a king named Sisyphus was punished by the God of the dead for cheating death twice. His punishment was to roll a giant stone up a hill only for it to roll down. 
+before it reached the top. 
+
+Sisyphus was doomed to repeat this action for all eternity. The pursuit of the latest and greatest, the bleeding edge can be Sisyphean, an incomplete action doomed to be repeated forever. 
+
+Arbitrarily. Installing the latest version of a package or implementing a given protocol without having a tangible impact can be a waste of time. 
+
+Engineers can and should keep software current. But what is practical? What is current? It can be tempting to say current no matter what the cost, but there are costs and risks associated 
+with every change. 
+
+New versions of a system come with a potential for new bugs, unexpected behaviors and unintended consequences. 
+
+Each time the system is changed, so does the risk profile. 
+
+Security updates should be applied regularly even if the perception is that there is little or no risk to the organization. 
+
+Estimations are exactly that and do leave room for error. There are some circumstances when there genuinely is no risk. 
+
+I cannot decide for you when that time is. As it's dependent on the application, its audience, how people access it, the severity of the issue, the difficult and practicality of 
+addressing it and the risk of being wrong. 
+
+This is not to make the case for stagnation. Upgrades and updates can bring new life to an application. 
+
+Over time, components can be upgraded or swapped out for more modern alternatives. 
+
+An inconsistent code base can be refactored to adhere to current coding standards. 
+
+Just because something is old doesn't mean it's effective. 
+
+A critical eye is absolutely required, but with that balance of respect for what it can and does do. 
+
+A system may be older, but if you can understand how it works and maintain it then a legacy system can be incredibly dependable. 
+
+Consider the pure fact that it still exists all these years later. It survived for reasons. Of course, those reasons could be neglect, lack of actionable information and the fact that 
+nobody remembered it existed. 
+
+Refactors or rebuilds of a system can be incredibly time consuming and costly. 
+
+There's absolutely a case to be made in favor of redoing a system, but it comes with inherent risk. 
+
+An application built and maintained over years, likely has many business cases, edge cases, bug fixes and all sorts of refinements that have addressed a variety of concerns. 
+
+When replacing a system like that, all of those scenarios and fixes need to be accounted for. 
+
+How can you be certain that the replacement will surpass the original? A very possible outcome is an older system that people don't like working with, and a buggy and incomplete newer 
+system that people prefer to work in but struggles to meet the functional requirements of the original. 
+
+Like the creation of competing standards, if you take exception with one, instead of collaborating to address your concerns you create a new one. 
+
+Now you have two standards. 
+
+Is this progress? In summary, just because something is new doesn't mean it's superior. Carefully consider the cost of upgrading or replacing before making any changes. 
+
+If it's not worth the cost in either direction there isn't an audience and there isn't a case to keep a system. It should be sunsetted and turned off. 
+
+How can you safely determine if this is the time for a system to be shut down?
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
