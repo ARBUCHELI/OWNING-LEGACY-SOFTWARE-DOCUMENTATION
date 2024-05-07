@@ -89,6 +89,107 @@ As you assume ownership of a legacy system, documentation will play a key role i
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+* Effective documentation
+-------------------------
+Effective documentation. Writing documentation is a task that's easy to procrastinate. It's fun to build and plan things, but there's little glory in writing documentation. 
+
+A good manual is an essential component of a healthy system. What does effective documentation look like? A good manual should be both thorough and concise, which sounds contradictory. 
+
+There's a case for both. The thoroughness should answer essential questions about the system. 
+
+What does the application do? 
+
+Who maintains the software and is responsible for it? 
+
+Why was it created? 
+
+How does it work? 
+
+How do you know it's working correctly? 
+
+What are the troubleshooting steps if it isn't working properly? 
+
+Make sure that there's enough information to answer the most important questions. This is a delicate balance. 
+
+When is there too much information? 
+
+The conciseness should be the brevity of information. Get to the point and get out of the way. 
+
+Consider a cooking blog that stretches a recipe into pages of descriptions of how dill makes you feel and helpful affiliate links to every kitchen gadget known to humanity. 
+
+If you just want to make dinner and see a recipe without having to scroll, all that commentary and distractions are exactly just that. 
+
+An effective manual makes its point and gets out of the way. 
+
+It doesn't have to be lengthy, just informative. So how do you find a balance between too much and too little documentation? 
+
+Logical organization and priority hierarchy will improve navigation. 
+
+Brief statements with logical paragraph breaks, concise lists, and clean formatting really make understanding the system easier for others. 
+
+The goal should be to educate. 
+
+If there was an emergency and you weren't available, 
+
+would someone else know what to do if they read the manual? 
+
+Would they know how to find it? 
+
+Is it spread out in multiple locations and should be consolidated to save effort? 
+
+If a piece of software is part of a larger system, it's definitely recommended to link to the larger systems documentation and avoid duplication. 
+
+For example, deployment instructions may be the same for a collection of applications. So just refer to the main instructions and only document exceptions or specific configurations. 
+
+Throughout your journey to own a system, you should be recording your findings in a manual, knowledge base, wiki, readme, or some other centralized and accessible location. 
+
+Save the next person the time. There's no advantage to siloing information. And memory is fallible. The longer you wait to write it down, the more likely that details will be missed. 
+
+Have you heard the lazy excuse that a program is so perfectly designed that it's self-documenting? If you've made that excuse, I hope you feel a twinge of shame. 
+
+Code should be commented and logical, but where's the description of the overall intent, how to manage the system? Something is obviously better than nothing, but a well-documented 
+interior and an obtuse confusing exterior are a detriment to anyone trying to maintain the system. 
+
+Build the knowledge base to save the next person time and prevent information siloing. As you learn more about a system, organize and document it. 
+
+An important question that should be documented is, who is the actual owner of the system?
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
