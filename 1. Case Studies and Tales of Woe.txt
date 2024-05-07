@@ -330,6 +330,105 @@ How can you safely determine if this is the time for a system to be shut down?
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+* Knowing when to retire a system
+---------------------------------
+Like life, software applications have a finite amount of time that they exist. The overall systems may persist, but individual components will come and go. 
+
+How can you determine if a particular system has reached the end of its effectiveness? Sometimes the answer is incredibly obvious. 
+
+If the application is serving no purpose, and isn't used by anything, then it's safe to turn off. 
+
+It sounds pretty straightforward, but it's rare to find a system that is clearly ready to be turned off without serious research. 
+
+Earlier, I discussed learning about the decision makers in determining who the audience of a system is either in people or in other services. 
+
+If that audience is nobody, well, there's your answer, but what if the audience size is small or unknown? Instrumentation, logging and reporting can be used to determine the size of the 
+current audience. 
+
+Are people logging into the system? Is the API responding to requests, and if so, how many and what type, and who is requesting it? Is the system even actively running and accessible? 
+
+How can you tell? Do an investigation. Based on those findings, have a conversation with the decision makers, even if that person is yourself. 
+
+If the audience is small, how small is too small? 
+
+What's the cost of maintaining the system compared to shutting it down? 
+
+What functionality will be lost? 
+
+Is that functionality or feature available somewhere else, either in your system or in someone else's? 
+
+A third party perhaps? 
+
+Is this something that can be delegated more effectively? 
+
+If the system is malfunctioning, the repair is often easier than replacement. There's a difference between not wanting to have to deal with the system, and not needing that system. 
+
+A system that is obtuse, difficult to work with, lacking documentation and error-prone will frustrate anyone. Developer experience is an incredibly important factor in maintainability. 
+
+If the application is difficult to work with, then people will be reluctant to improve it. It's hard to prioritize frustrating work that doesn't offer direct value to an end user. 
+
+Documentation, coding standards, test coverage and institutional knowledge, all add themselves to the developer experience. 
+
+Bad code smells can be indicative of a greater problem with the system, and should be addressed instead of being allowed to fester. 
+
+With that said, a negative developer experience is not a reason to retire a functioning system. 
+
+Negative DX may impact how functional the system is, but shouldn't be the sole justification for ending support. 
+
+Bad code smells should be addressed with a directed approach with a specific outcome. 
+
+Improvements can take place over time, which may make scheduling more palatable when balancing delivering tangible improvements. 
+
+If it truly is time to turn off a system, you can't just shut it off or delete it. 
+
+Exercise good change management, and set expectations with stakeholders and decision-makers. Make a schedule and a strategy for how you're going to turn things off. 
+
+Does it make sense to archive or migrate any content from this system to another? If there's a replacement, how can people or services be redirected to the alternative? 
+
+What's the transition plan and timeline, and how will it be managed? If you're going to archive content from a system, include an expiration date, and get it on a known schedule. 
+
+Otherwise, the system will be shut off, but will still be consuming resources, such as storage costs or database maintenance. 
+
+When a system has been eliminated, have the plan to handle every last remaining part. If there's still an audience, and a purpose for the application, then it's time to shift focus toward 
+the future. 
+
+How can engineers rebuild an understanding of how a system works while improving it?
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
