@@ -703,6 +703,123 @@ How do you make a graceful switch between the old system and its replacement?
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+* Gracefully cutting over from old to new
+-----------------------------------------
+When re-implementing a system, you're likely going to be making different architectural decisions. 
+
+If you're going to perfectly replicate the old system, why bother remaking it? There are likely very fundamental differences in how the new system is architected. 
+
+This could be a different system for storage, caching, data structure, even programming language. 
+
+Ultimately, how the new system is built doesn't matter as much as whether it fulfills the current intended purpose of the original system. 
+
+What does matter is how the system is interacted with. A website front end is very visible to users who will immediately notice if things start looking different. 
+
+If the intent is to stay true to the original look and feel, then care needs to be taken to ensure consistency between the systems. 
+
+An application programming interface, also known as an API, is less nuanced in comparison. Any clients connecting to the API expect it to work in a particular way. 
+
+If a route is missing or responds differently, chaos ensues in the form of impaired functionality at best and data loss at worst. 
+
+Often, it's not practical or possible to refactor the clients at the same time to compensate for a different architecture. 
+
+When developing a replacement system, there are likely very good reasons to get the updated version shipped as soon as possible. 
+
+However, the act of creating an application takes time, even if you have a prototype that you're following. Reaching functional parody can potentially take a very long time. 
+
+Acceptance testing and validation will take even longer and a cut over may require migration and downtime. 
+
+Is a monolithic cut over the only approach? The strangler fig pattern was coined by Martin Fowler, a software engineer. 
+
+A strangler fig is a tropical plant that seeds in the upper branches of a tree then gradually grows down until it roots in the soil. 
+
+Over time, the strangler fig feeds on and takes over the host, usually resulting in the death of the original tree. 
+
+With that context, the strangler fig pattern is an industry standard approach for backend and front end, in place system takeovers for breaking up monoliths and incrementally removing 
+control. 
+
+This alternate route gradually creates a new system around the edges of the old and grows with time. 
+
+Instead of a seed, a proxy is placed over the old system. 
+
+When a new service or implementation is ready, the proxy defers the relevant traffic to the new service. Over time, proxying and swapping continue until all the relevant parts of the 
+legacy system have been migrated. 
+
+When there are no remaining parts, the host tree has been consumed and the legacy application can be decommissioned. 
+
+This approach allows for steady and frequent releases for an incremental approach, which in turn reduces risks. Making the call to turn off a legacy application can be difficult without 
+complete knowledge of what it was doing. 
+
+Paralysis and indecision, like what I outlined and don't unplug this server, can add years of life to a potentially deprecated system. There's a technique called the scream test where you 
+turn a system off and wait for the screams and panic. 
+
+If nobody screams, it validates that the system was safe to turn off. 
+
+If someone did scream, then you can absolutely turn it back on and note who that stakeholder was. The scream test isn't a guarantee, but it can be effective. 
+
+If you attempted, there should always be a rollback strategy and backups. Here's a practical example of this type of situation. 
+
+The current generation of a website consisted of microservices, a renderer, and a content management system. 
+
+The previous version of that same website was a monolith, with everything integrated into a single gigantic application. 
+
+Bit by bit and piece by piece, functionality was transferred into the new. 
+
+In fact, a whole initiative had gone into deprecating the old infrastructure. 
+
+Engineers had decoupled the front end into a distinct rendering system and there was a standalone content management system. Yet several years later, the system remained. 
+
+What was it doing? The last time the scream test was attempted, a public facing file download system failed to work. Priority wasn't given to the investigation, so the old system 
+continued to operate. 
+
+A couple of years later, I inherited this application along with part of its successor. 
+
+I interviewed a number of people for institutional history, red server logs, and some of the original source code. 
+
+I eventually determined that the file downloads were relying on the legacy system to look up a record, determine the file type, and set the file delivery to the mime type. 
+
+I worked with a relevant team to replace the lookup with some proxy rules that would set the file type based on the file extension. The fix went out and was validated, then the scream 
+test was repeated. 
+
+We listened and there was silence. This service was decommissioned gracefully. What's the moral of the story? 
+
+	. The final finishing touches of any project can take the longest and can easily be disrupted. 
+
+	. Persistence and iteration are key. 
+
+	. At this point, you should either have a functioning and streamlined older application, a newer replacement application, or hybrid of the two and a gradual cut over strategy. 
+
+Should you always be personally responsible for the system? How do you want to be remembered?
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
