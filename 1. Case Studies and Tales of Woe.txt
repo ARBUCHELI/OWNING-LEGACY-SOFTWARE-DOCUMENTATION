@@ -157,6 +157,61 @@ An important question that should be documented is, who is the actual owner of t
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+* Who actually needs this?
+--------------------------
+Who actually needs this? People come and go from organizations regularly. It's a natural part of professional life. 
+
+Like cells in your body that are constantly rejuvenating and replacing themselves, over time an organization with the same name and departments can have completely different faces. 
+
+That's not necessarily a bad thing. It just is. However, it also means that with different people come different needs. 
+
+Just because a particular process or application was important five years ago doesn't mean that it's still relevant today. 
+
+Tooling may have improved, standards and technologies change, and audiences can be fickle. 
+
+It's natural for systems to come and go as needs shift over time. Change for the sake of change isn't always good but neither is refusing to adjust despite what the market is telling you. 
+
+Based on the research and conversations you've been having, you should have a comprehensive understanding of the history, intended audience, scope, and stakeholders. 
+
+You can compare that to the actual usage of the application and its current audience. 
+
+Validate their understanding of what you've learned and what is current. 
+
+If it's aligned, great. If it's not aligned, there might be some bigger and more difficult conversations that need to be had. 
+
+Here's an example of this sort of situation. There is a content ingester that would read articles from a feed, translate them into a different language, and then add them, unpublished, 
+into the content management system. 
+
+Our team had written and owned it, so we knew its history. Over time, the volume of content translated would increase to the point that we started paying overages to the translation 
+service. 
+
+We checked with stakeholders and decision-makers and they insisted that, yes, this was an important part of our strategy and we still needed to maintain it. 
+
+So we continue to patch and keep it up to date. As part of a different project, we decided to re-implement the system and started reverse-engineering it. 
+
+We took a look at the content that had been added and discovered that nothing had been published for months. 
+
+What was the root cause? The people who were doing the publishing changed their strategy but never notified our liaison about the change. 
+
+The system was technically doing exactly what it had been designed to do: read, translate, and send content over. 
+
+Nobody complained, so we just kept it going and paid for the translation. 
+
+The reflexive trust cost the company thousands of dollars before the situation was detected and the service was gracefully shut down, leaving a large volume of unpublished content that 
+adds to the bulk of the database and serves no other practical purpose. 
+
+This was avoidable with good communication across departments and change management. 
+
+Effective monitoring, not just the artifact created by the system but the intended result, could have surfaced the issue earlier. 
+
+This was an embarrassing and frustrating incident, representing a real cost, both in money and time, that could've been used elsewhere with greater impact. 
+
+There were good intentions all around and some opportunities for improvement, in hindsight. The moral of the story? When it comes to legacy applications, trust the information you've 
+gathered but verify. On the subject of trust, what are some ways that poor communication can disrupt a team trying to manage an application?
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 
 
