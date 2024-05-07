@@ -551,6 +551,86 @@ impact?
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+* Building confidence with automated testing
+--------------------------------------------
+A very common and reasonable impulse when faced with an unknown system is to make no changes whatsoever. 
+
+That's almost never practical, given the probable need to improve, expand, or even remove components. 
+
+In order to increase confidence in changes you're making to the system or its replacement, you're going to need test cases. 
+
+A test case defines the steps for testing a particular system with an expected result. For example, I could have a test case for the acceptance criteria for a cat. 
+
+I expect that a cat will meow. The result of a test case is a pass or fail, true or false. It either worked or it didn't. If it sort of works then the test case isn't specific enough. 
+
+The result of what is being tested doesn't have to be a bullion. You could be checking for a specific value, a range of values, or maybe something that is greater than or equal. 
+
+Regardless of whether the correctness is determined the end result is the same, it passed or failed. With a given test case, you need to apply it to the software in question. 
+
+At a high level, there are two ways to test software, manually and automatically. When manually testing software, a human is given a set of instructions or test cases and goes through 
+those steps to validate correctness. 
+
+In contrast, test automation is the practice of using software driven tools to automate the execution of test cases to validate the correctness of a program. 
+
+Test automation is separate software from the application that is being written and tested. 
+
+Manual testing works, but has a number of drawbacks. The act of manual testing is time consuming, repetitive, error prone, and can be pretty boring. 
+
+Humans can do comparisons quickly, but consider a process with dozens of steps and searching logs or generated output for a specific value. Manual testing is an essential part of software 
+development. 
+
+When writing test cases, they're often tested first manually. 
+
+Test automation takes those test cases and enshrines them into code, typically in a different place than the actual program being tested. 
+
+It can be in the same project sometimes organized in a different folder, and sometimes within the same folder, but with different file names. 
+
+Regardless, automated test cases can be executed much more rapidly with higher confidence in consistency compared to manual testing. 
+
+There are many different types of test cases. 
+
+The most basic form is a unit test. 
+
+Unit testing tests a completely isolated unit of code via its application program interface. Unit tests are performed in memory, meaning no permanent changes take place. 
+This makes them safe to run over and over again. Additionally, unit tests execute very quickly, which makes them invaluable to development. 
+
+If the project already has test cases, especially automated tests, that's fantastic. 
+
+As you review them, you'll practically learn how the software is intended to work, hopefully along with edge cases and exceptional situations. 
+
+If you don't have any test cases, well, you've got to start somewhere. 
+
+Pick a component that could be easily isolated and write one test that compares an actual result with an expected result. 
+
+One is better than none and writing the first is the hardest. If the project doesn't have an automated build process this would be an excellent opportunity to add one. 
+
+At a minimum, add a test step to validate any changes that have been made, even if it's only the one test, it's still worth having. 
+
+If there's any deviation from the expected result, test automation from a build process will highlight the problem before the changes are released. 
+
+Building a suite of test cases is invaluable if you are looking to write a drop-in replacement for a system, especially for test cases that cover APIs. 
+
+If you can guarantee that the API signature matches between the systems and produces the same results then the replacement will be completely transparent and should minimize any 
+potential disruption. 
+
+When you have test cases this empowers you to make changes to how the system works. 
+
+Consider an optimization when you are taking an unnecessarily complicated process and simplifying it. 
+
+The input and output should remain the same. It may be the case that you are the world's greatest programmer and your changes will perfectly optimize the system with no side effects. 
+
+It's more likely that there may be an unintended side effect. Test your changes, preferably automatically to validate the correctness and reduce the possibility of defects. 
+
+It's rarely necessary to test every single line of code in your system. 
+
+Find a balance that will provide reasonable confidence that the mission critical paths of the application in user flow work as expected. 
+
+Some tests are better than none and perfection is the enemy of good. Test efficiency is key in providing feedback, especially when working iteratively. 
+
+If it takes a long time for tests to execute, engineers will procrastinate and avoid running tests to save time. Sometimes an older system is absolutely worth salvaging and maintaining 
+rather than replacing outright. How can you go about improving an older system?
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
