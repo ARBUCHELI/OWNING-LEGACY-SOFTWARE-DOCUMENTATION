@@ -632,6 +632,107 @@ rather than replacing outright. How can you go about improving an older system?
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+* Refactoring code in place
+---------------------------
+A code refactoring is when a software engineer restructures existing code without affecting its external behavior. 
+
+There are many advantages to a refactor, including making the code easier to read and maintain, reducing the complexity, and in many cases, improving performance. 
+
+Why would a refactor be necessary? Consider the act of building, well, anything. 
+
+You start with a foundation and framework and build outwards. As you keep adding things, you start to focus on smaller and smaller components, filling in the fine details. 
+
+As you progress, you're also learning and growing, and your approach to an earlier challenge may change with your experience. 
+
+Additionally, coding practices, standards, and tooling change over time. 
+
+You may look at a piece of code written five years ago that is still perfectly functional, but find that the style doesn't conform to today's standards. 
+
+It doesn't mean that it's wrong, but it does mean that whenever you work in that system, do you conform to what was there or do you bring it up to the current standards? 
+
+It can be considered good code hygiene to refactor and clean up code as you work continuously. 
+
+A series of micro refactorings focused on fixing a particular problem can be incredibly effective. 
+
+For example, renaming variables or methods to better reflect what they do should have no functional impact, but will improve readability. 
+
+A larger piece of code could be broken into more logical pieces, improving maintenance and testability. 
+
+In contrast, a monolithic refactor can be incredibly risky. Before considering a radical change, think critically about what the intended impact is. 
+
+Then estimate the amount of time, the potential disruption, and risk the change represents. 
+
+Is the work required to, say, rename every file to match a newer naming convention going to provide a tangible benefit? Or does it just arbitrarily check a box? Stylistic changes can also
+represent a monolithic change. 
+
+For example, standardizing spacing from tabs to spaces or using single quotes for string delimitation instead of double quotes could potentially impact every single file in a project. 
+
+Ah, but I'm using an automated tool to make those stylistic changes, you may say to yourself, that's very low risk. It'll standardize the look and feel of the code. 
+
+On the other hand, consider the impact this will have on the history of the code. If you look in a source control system at the history of a file, it will practically look like one 
+engineer changed every one of those lines, because they did. 
+
+If you're trying to review the history of a piece of code, you will have to go back to before that refactor to see how it was originally written. 
+
+Regardless of the scope of a refactor, automated test cases should be set up before starting to change the code to ensure that the system still works as expected. 
+
+Test automation provides confidence and stability to an engineer and empowers them to make incremental changes. 
+
+Unit testing can empower an iterative cycle of refactoring. Make a small change, test it to ensure it's correct, then make another small transformation. 
+
+A focused test suite that gives quick feedback is essential for this refactoring strategy. 
+
+If you are maintaining a legacy system you likely didn't create it. 
+
+Even if you did create it, the way it was originally designed may be different from your approach today. 
+
+Systems written differently than how you would've approached them are just as valid. Different doesn't mean good or bad, it just is. 
+
+You should tolerate stylistic and non-functional differences in the favor of stability. Change for the sake of change can just be a form of chaos. 
+
+You are likely expected to deliver new functionality and move beyond the current challenges that you have in front of you. 
+
+An unnecessary refactor can be costly, time-consuming, and frankly, a waste of time and effort that could be better spent doing something more valuable and innovative. 
+
+Do make a point of looking for opportunities to improve pain points and maintainability. Don't just change a working system for the sake of changing it. 
+
+If refactoring isn't worth the time or risk, it may be more logical to replace a system outright. It happens. Replicating a system is way easier than innovating and building something new 
+for the first time. The same rules for refactoring apply to a replacement. Is the risk, time, effort, and so forth worth it? If it is, fantastic. 
+
+How do you make a graceful switch between the old system and its replacement?
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
